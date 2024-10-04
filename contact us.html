@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Us - Skincare for Colleagues</title>
+    <link rel="stylesheet" href="Gayatama2.css">
+    <style>
+        /* Fade-in animation for the heading and paragraph */
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn 2s ease-in forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Different delay for the heading to make animations sequential */
+        .fade-in-heading {
+            opacity: 0;
+            animation: fadeIn 2s ease-in forwards;
+            animation-delay: 0.5s; /* delay for heading animation */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <h1>Skincare for Colleagues</h1>
+            <ul>
+                <li><a href="Gayatama (1).html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="contact" class="contact">
+        <h2 class="fade-in-heading">Contact Us</h2>
+        <p class="fade-in">We’d love to hear from you! Whether you have a question about our products, need assistance, or just want to give us feedback, feel free to reach out to us.</p>
+        <form action="submit_contact.php" method="post" class="contact-form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2024 Skincare for Colleagues. All rights reserved.</p>
+    </footer>
+
+    <script src="Gayatama3.js"></script>
+</body>
+</html>

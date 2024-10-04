@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Skincare for Colleagues</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+
+        header {
+            background-color: #864caf;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        .navbar {
+            text-align: center;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .navbar ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .hero {
+            background-color: #ffe4ff;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        /* Animasi Fade In */
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn 2s ease-in forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .hero h2 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        .btn {
+            background-color: #864caf;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            box-shadow: 0 0 15px rgb(255, 255, 255); /* Glow effect */
+            transition: box-shadow 0.3s ease-in-out; /* Smooth transition */
+        }
+
+        .btn:hover {
+            box-shadow: 0 0 30px rgb(255, 255, 255); /* Stronger glow on hover */
+        }
+
+        .products {
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .product-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 0 50px;
+        }
+
+        .product-card {
+            border: 2px solid #864caf;
+            border-radius: 10px;
+            width: 30%;
+            padding: 20px;
+            text-align: center;
+            background-color: white;
+            box-sizing: border-box;
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .product-card h3 {
+            margin-top: 10px;
+            font-size: 20px;
+        }
+
+        .product-card p {
+            margin-top: 5px;
+            color: #864caf;
+        }
+
+        footer {
+            background-color: #864caf;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Skincare for Colleagues</h1>
+        <nav class="navbar">
+            <ul>
+                <li><a href="Gayatama (1).html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="contact us.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h2 class="fade-in">Discover Your Perfect Skincare</h2>
+        <p class="fade-in">Explore the best products curated just for college students!</p>
+        <a href="#products" class="btn fade-in" style="animation-delay: 1s;">Browse Products</a>
+    </section>
+
+    <section id="products" class="products">
+        <h2>Our Products</h2>
+        <div class="product-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <img src="Skintific_5x_Ceramide_Barrier_Moisture_Gel.jpeg" alt="Skintific 5x Ceramide Moisture Gel">
+                <h3>Skintific 5x Ceramide Moisture Gel</h3>
+                <p>Rp 50.000</p>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card">
+                <img src="Lamor_Dunhill_Blue_Perfume.jpeg" alt="L'amor Dunhill Blue Perfume">
+                <h3>L'amor Dunhill Blue Perfume</h3>
+                <p>Rp 25.000</p>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card">
+                <img src="Madevine_Hair_Treatment_Oil.jpeg" alt="Madevine Hair Treatment Oil">
+                <h3>Madevine Hair Treatment Oil</h3>
+                <p>Rp 120.000</p>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product-card">
+                <img src="Cosrx_AHA_BHA_Clarifying_Toner.jpeg" alt="COSRX AHA BHA Clarifying Toner">
+                <h3>COSRX AHA BHA Clarifying Toner</h3>
+                <p>Rp 110.000</p>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="product-card">
+                <img src="The_Ordinary_Hyaluronic_Acid.jpeg" alt="The Ordinary Hyaluronic Acid">
+                <h3>The Ordinary Hyaluronic Acid</h3>
+                <p>Rp 150.000</p>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="product-card">
+                <img src="CeraVe_Foaming_Cleanser.jpeg" alt="CeraVe Foaming Cleanser">
+                <h3>CeraVe Foaming Cleanser</h3>
+                <p>Rp 95.000</p>
+            </div>
+
+            <!-- Product 7 -->
+            <div class="product-card">
+                <img src="Neutrogena_Hydro_Boost.jpeg" alt="Neutrogena Hydro Boost">
+                <h3>Neutrogena Hydro Boost</h3>
+                <p>Rp 135.000</p>
+            </div>
+
+            <!-- Product 8 -->
+            <div class="product-card">
+                <img src="Innisfree_Green_Tea_Seed_Serum.jpeg" alt="Innisfree Green Tea Seed Serum">
+                <h3>Innisfree Green Tea Seed Serum</h3>
+                <p>Rp 180.000</p>
+            </div>
+
+            <!-- Product 9 -->
+            <div class="product-card">
+                <img src="Laneige_Water_Sleeping_Mask.jpeg" alt="Laneige Water Sleeping Mask">
+                <h3>Laneige Water Sleeping Mask</h3>
+                <p>Rp 200.000</p>
+            </div>
+
+            <!-- Product 10 -->
+            <div class="product-card">
+                <img src="La_Roche-Posay_Effaclar_Duo.jpeg" alt="La Roche-Posay Effaclar Duo">
+                <h3>La Roche-Posay Effaclar Duo</h3>
+                <p>Rp 220.000</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Skincare for Colleagues. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

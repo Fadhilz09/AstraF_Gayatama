@@ -1,0 +1,251 @@
+/* Reset Default Browser Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+    
+
+}
+
+header {
+    background-color: #864caf;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.navbar h1 {
+    color: #fff;
+    font-size: 28px;
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+.navbar ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.hero {
+    background-color: #ffe4ff;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero h2 {
+    font-size: 36px;
+    color: #333;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #666;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #864caf;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.about,
+.products,
+.contact {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.products .product-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+.product-card img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact form input,
+.contact form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #864caf;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .hero {
+        height: 40vh;
+    }
+
+    .hero h2 {
+        font-size: 24px;
+    }
+
+    .product-card {
+        width: 100%;
+    }
+}
+.product-card {
+    opacity: 0; /* Awalnya tersembunyi */
+    transform: translateY(20px); /* Geser ke bawah sedikit */
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out; /* Transisi halus */
+}
+
+.product-card.visible {
+    opacity: 1; /* Menampilkan elemen */
+    transform: translateY(0); /* Kembali ke posisi semula */
+}
+/* Efek bayangan saat diklik */
+.product-card {
+    transition: box-shadow 0.3s ease; /* Transisi halus untuk bayangan */
+}
+
+.product-card.clicked {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Bayangan saat diklik */
+}
+header {
+    color: #fff; /* Warna teks */
+    text-shadow: 
+        0 0 5px rgba(255, 255, 255, 0.8), /* Cahaya pertama */
+        0 0 10px rgba(255, 255, 255, 0.7), /* Cahaya kedua */
+        0 0 15px rgba(255, 255, 255, 0.6), /* Cahaya ketiga */
+        0 0 20px rgba(255, 255, 255, 0.5); /* Cahaya keempat */
+}
+#home {
+    color: #fff; /* Warna teks */
+    text-shadow: 
+        0 0 5px rgba(255, 255, 255, 0.8), /* Cahaya pertama */
+        0 0 10px rgba(255, 255, 255, 0.7), /* Cahaya kedua */
+        0 0 15px rgba(255, 255, 255, 0.6), /* Cahaya ketiga */
+        0 0 20px rgba(255, 255, 255, 0.5); /* Cahaya keempat */
+}
+button {
+    color: #040202; /* Warna teks */
+    text-shadow: 
+        0 0 5px rgba(255, 255, 255, 0.8), /* Cahaya pertama */
+        0 0 10px rgba(255, 255, 255, 0.7), /* Cahaya kedua */
+        0 0 15px rgba(255, 255, 255, 0.6), /* Cahaya ketiga */
+        0 0 20px rgba(255, 255, 255, 0.5); /* Cahaya keempat */
+}
+footer {
+    color: #ffffff; /* Warna teks */
+    text-shadow: 
+        0 0 5px rgba(255, 255, 255, 0.8), /* Cahaya pertama */
+        0 0 10px rgba(255, 255, 255, 0.7), /* Cahaya kedua */
+        0 0 15px rgba(255, 255, 255, 0.6), /* Cahaya ketiga */
+        0 0 20px rgba(255, 255, 255, 0.5); /* Cahaya keempat */
+}
+body {
+    background-color: #f9f9f9; /* Warna dasar latar belakang */
+}
+
+#glow-background {
+    position: relative; /* Agar efek shadow bekerja dengan baik */
+    background-color: #ffffff; /* Warna latar belakang utama */
+    padding: 20px; /* Ruang di dalam elemen */
+    border-radius: 10px; /* Sudut yang melengkung */
+    box-shadow: 
+        0 0 20px rgba(134, 76, 175, 0.5), /* Glow utama */
+        0 0 30px rgba(134, 76, 175, 0.4), /* Glow kedua */
+        0 0 40px rgba(134, 76, 175, 0.3); /* Glow ketiga */
+}
+.product-card:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05); /* Sedikit perbesaran saat hover */
+}
+#glow-background {
+    transition: box-shadow 0.5s ease-in-out;
+}
+@media (max-width: 768px) {
+    .product-card img {
+        max-width: 80%;
+    }
+}
+.hero h2, .hero p {
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 2s ease-in forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
